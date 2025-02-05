@@ -1,0 +1,20 @@
+replicaCount: 4
+
+image:
+  repository: your-org/auto-scaling-demo
+  tag: stable
+  pullPolicy: Always
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 1Gi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 4
+  maxReplicas: 20
+  targetCPUUtilizationPercentage: 75 
