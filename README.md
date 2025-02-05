@@ -59,7 +59,6 @@ kubectl create secret generic app-secrets --from-literal=DB_PASSWORD='your-passw
 ```
 auto-scaling-gitops-demo/
 ├── terraform/               # Cloud infrastructure
-├── ansible/                 # Server configuration
 ├── kubernetes/             # K8s manifests
 ├── ci-cd/                  # CI/CD workflows
 ├── sample-app/             # Demo application
